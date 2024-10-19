@@ -32,7 +32,8 @@ nav ul li a {
   color: white;
 }
 nav ul li a:hover {
-  color: plum;
+  color: #c94b63;
+
   font-size: 1.05rem;
 }
 
@@ -53,7 +54,7 @@ nav ul li a:hover {
   font-size: 1.6rem;
 }
 #element {
-  color: #e1afd1;
+  color:  #f67280;
 }
 .rightSection {
   margin-right: 0;
@@ -64,8 +65,71 @@ nav ul li a:hover {
   border: 5px solid black;
 }
 .name {
-  color: #e1afd1;
-}
+  color:  #f67280;}
 #line {
   width: 300px;
+}
+.About {
+  margin: 120px;
+  padding: 20px;
+  background-color: #ffe6e6; /* Card background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Animation for hover effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.About h2 {
+  font-size: 2rem;
+  color: #f67280;
+   /* Header color */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.About p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Adding border and space between sections */
+.firstSection {
+  padding-bottom: 20px; /* Space below the first section */
+  margin-bottom: 20px; /* Space before the About section */
+}
+
+/* Animation effect on hover */
+.About:hover {
+  transform: scale(1.02); /* Slightly enlarge the card */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Increase shadow depth */
+}
+.about1{
+  font-family: Arial, Helvetica, sans-serif;
+  padding:20px;
+  text-justify: distribute-all-lines;
+}
+.about2{
+  font-family: Arial, Helvetica, sans-serif;
+  padding:20px;
+  text-justify: distribute-all-lines;
+}
+.resume-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f67280;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.resume-btn:hover {
+  background-color: #c94b63;
+  transform: scale(1.05);
 }
