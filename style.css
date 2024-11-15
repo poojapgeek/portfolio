@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+main {
+  margin-top: 100px; /* Adds space below the fixed navbar */
+}
+
 body {
   /* background-color: #ffcdea; */
   /* background-color: #3d1b74; */
@@ -11,13 +15,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 nav {
+  position: fixed;  /* Makes the navbar fixed at the top */
+  top: 0;           /* Positions it at the top of the page */
+  width: 100%;      /* Makes it span the full width of the page */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 65px;
+  background-color: #ff465fd2;
+  z-index: 1000;
   /* background-color: rgb(94, 39, 156); */
   /* background-color: #7469b6; */
-  background-color: #f67280;
+  
 }
 nav ul {
   display: flex;
@@ -39,12 +48,12 @@ nav ul li a:hover {
 
 .left {
   font-size: 1rem;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .firstSection {
   display: flex;
-  justify-content: space-around;
-  margin: 40px 0px;
+  justify-content: space-evenly;
+  margin: 50px 20px;
   align-items: center;
 }
 .firstSection div {
@@ -58,10 +67,11 @@ nav ul li a:hover {
 }
 .rightSection {
   margin-right: 0;
+  margin-left:30px;
 }
 .img-pic {
   width: 80%;
-  border-radius: 0 50% 0 50%;
+  border-radius: 50%;
   border: 5px solid black;
 }
 .name {
@@ -69,8 +79,15 @@ nav ul li a:hover {
 #line {
   width: 300px;
 }
+
+.wholeabout{
+  background-color: #f67280;
+  padding:20px;
+  
+}
 .About {
-  margin: 120px;
+  width:80%;
+  margin: 120px auto;
   padding: 20px;
   background-color: #ffe6e6; /* Card background color */
   border-radius: 10px; /* Rounded corners */
@@ -94,6 +111,7 @@ nav ul li a:hover {
   line-height: 1.6;
 }
 
+
 /* Adding border and space between sections */
 .firstSection {
   padding-bottom: 20px; /* Space below the first section */
@@ -105,6 +123,7 @@ nav ul li a:hover {
   transform: scale(1.02); /* Slightly enlarge the card */
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Increase shadow depth */
 }
+
 .about1{
   font-family: Arial, Helvetica, sans-serif;
   padding:20px;
@@ -132,4 +151,172 @@ nav ul li a:hover {
 .resume-btn:hover {
   background-color: #c94b63;
   transform: scale(1.05);
+}
+p{
+  letter-spacing: 1.5px;
+
+}
+/*Myskills*/
+.skills-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.skills-card {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width:80%;
+  margin: 120px auto;
+  background-color:  #f67280;
+  
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 50px;
+
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  padding: 1rem;
+  background-color: #fdfdfd;
+  border: 2px solid #ddd; /* Base border */
+  border-radius: 8px;
+  box-shadow: inset -2px -2px 5px #ffffff, /* Top-left highlight */
+              inset 2px 2px 5px #cccccc, /* Bottom-right shadow */
+              4px 4px 8px rgba(0, 0, 0, 0.1); /* Outer shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Add smooth effect */
+}
+
+.skill:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: inset -2px -2px 5px #ffffff, 
+              inset 2px 2px 5px #cccccc, 
+              6px 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.skill h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+}
+/*Projects*/
+.projects-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f67280;
+}
+
+.projects-card {
+  background-color:#ffe6e6; /* Reversed color */
+  color: #f67280; /* Text color */
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 70%;
+  margin: 120px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects-card h2 {
+  font-size: 30px;
+  color: #f67280; /* Section heading color */
+  margin-bottom: 2rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  padding: 1rem;
+  background-color: #f67280; /* Reversed card color */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 2rem;
+  /* Circular image */
+}
+
+.project h3 {
+  font-size: 0.75rem;
+  color: #fff; /* Text color inside project card */
+}
+/*footer*/
+.footer-section {
+  background-color:#ffe6e6; /* Reversed color */
+  /* Footer background color */
+  color: #f67280; /* Footer text color */
+  text-align: center;
+  padding: 1.5rem 0;
+  margin: 100px auto;
+  
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.copyright p {
+  margin: 0;
+}
+#twitter{
+  height: 30px;
+  width:30px;
 }
