@@ -69,6 +69,10 @@ nav ul li a:hover {
   margin-right: 0;
   margin-left:30px;
 }
+
+
+/* The element to apply the animation to */
+
 .img-pic {
   width: 80%;
   border-radius: 50%;
@@ -239,7 +243,6 @@ p{
   margin-bottom: 20px;
   color: #f67280;
   font-weight: bold;
-
   letter-spacing: 1px;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
@@ -251,12 +254,13 @@ p{
   justify-content: center;
   gap: 40px;
   margin-top: 40px;
+  padding:35px;
 }
 
 /* Individual Project Card */
 .project {
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -392,7 +396,7 @@ input, textarea {
 }
 
 button {
-  background-color: #007bff;
+  background-color: #f67280;
   color: #fff;
   border: none;
   padding: 10px 15px;
@@ -402,5 +406,5 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #f67280;
 }
